@@ -1,0 +1,74 @@
+{
+  "name": "pm2-health-oauth2",
+  "version": "1.12.12",
+  "description": "Apps health monitor and mail notification module for pm2",
+  "main": "./dist/App.js",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krzysztof Heim",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "latest",
+    "planck-http-fetch": "latest",
+    "pmx": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/nodemailer": "latest"
+  },
+  "keywords": [
+    "pm2",
+    "pmx",
+    "monitor",
+    "mail",
+    "crash",
+    "push",
+    "metric",
+    "notification",
+    "module"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankleks/pm2-health"
+  },
+  "config": {
+    "smtp": {
+      "type": "plain|oauth2",
+      "host": "your-smtp-host",
+      "port": 587,
+      "user": "your-smtp-user",
+      "password": "your-smtp-password",
+      "clientId": "client-id",
+      "clientSecret": "client-secret",
+      "accessToken": "access-token",
+      "refreshToken": "refresh-token",
+      "disabled": false
+    },
+    "mailTo": "mail1,mail2",
+    "replyTo": "",
+    "batchPeriodM": 0,
+    "batchMaxMessages": 0,
+    "events": [
+      "exit"
+    ],
+    "exceptions": true,
+    "messages": true,
+    "messageExcludeExps": [],
+    "metric": {},
+    "metricIntervalS": 60,
+    "aliveTimeoutS": 300,
+    "addLogs": true,
+    "appsExcluded": [],
+    "snapshot": {
+      "url": "",
+      "token": "",
+      "auth": {
+        "user": "",
+        "password": ""
+      },
+      "disabled": false
+    }
+  }
+}

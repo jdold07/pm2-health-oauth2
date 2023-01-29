@@ -1,0 +1,23 @@
+{
+  "types": [
+    { "type": "feat", "section": "Features" },
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "docs", "section": "Documentation" },
+    { "type": "style", "hidden": true },
+    { "type": "refactor", "section": "Build Related" },
+    { "type": "perf", "section": "Build Related" },
+    { "type": "test", "hidden": true },
+    { "type": "build", "section": "Build Related" },
+    { "type": "ci", "hidden": true },
+    { "type": "chore", "hidden": true },
+    { "type": "revert", "section": "Build Related" },
+    { "type": "wip", "section": "Work In Progress" },
+    { "type": "initial", "hidden": true }
+  ],
+  "bumpFiles": [
+    {
+      "filename": "package.json",
+      "type": "json"
+    }
+  ]
+}
