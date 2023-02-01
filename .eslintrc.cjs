@@ -7,10 +7,14 @@ module.exports = {
   overrides: [],
   parser: "@typescript-eslint/parser",
   parserOptions: {
-    ecmaVersion: "latest",
+    ecmaVersion: "ES2022",
     sourceType: "commonjs"
   },
   plugins: ["@typescript-eslint"],
-  rules: { "@typescript-eslint/no-explicit-any": "off" },
+  rules: {
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-extra-semi": "off"
+  },
   ignorePatterns: ["node_modules", "build", "coverage", ".cache", "archive"]
 }

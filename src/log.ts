@@ -6,6 +6,7 @@ export function error(text: string) {
   console.error(`error:: ${new Date().toLocaleString("en-AU", { hour12: false })}: ${text}`)
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export let debug = (text: string) => {
   return
 }
